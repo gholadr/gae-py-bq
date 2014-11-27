@@ -62,9 +62,9 @@ class ExportTable(webapp.RequestHandler):
        status =jobCollection.get(projectId=projectId, jobId=insertJob['jobReference']['jobId']).execute()
        print status
        if 'DONE' == status['status']['state']:
-         print "Done exporting!"
+         self.response.out.write("Done exporting!")
          return
-       print 'Waiting for export to complete..'
+       self.response.out.write('Waiting for export to complete..')
        time.sleep(10)
 
 app = webapp.WSGIApplication(
