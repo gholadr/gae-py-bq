@@ -51,7 +51,8 @@ class ExportTable(webapp.RequestHandler):
                   "projectId": projectId,
                   "datasetId": datasetId,
                   "tableId": "limited_log"
-                  }
+                  },
+                  "writeDisposition": "WRITE_TRUNCATE"
             }
          }
       }
