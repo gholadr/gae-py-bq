@@ -10,7 +10,7 @@ from oauth2client.client import AccessTokenRefreshError
 
 # BigQuery API Settings
 SCOPE = 'https://www.googleapis.com/auth/bigquery'
-PROJECT_NUMBER = 'acquired-vector-747' # REPLACE WITH YOUR Project ID
+PROJECT_NUMBER = 'xxxxxxxxxxxxxxxx' # REPLACE WITH YOUR Project ID
 
 # Create a new API service for interacting with BigQuery
 credentials = AppAssertionCredentials(scope=SCOPE)
