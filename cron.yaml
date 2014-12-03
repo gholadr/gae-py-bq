@@ -1,0 +1,4 @@
+cron:
+- description: daily query export job
+  url: /export
+  schedule: every 1 hours
